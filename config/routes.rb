@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'articles#index'
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
   #     articles GET    /articles(.:format)          articles#index
   #  new_article GET    /articles/new(.:format)      articles#new
   #      article GET    /articles/:id(.:format)      articles#show
