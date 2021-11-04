@@ -2,9 +2,10 @@
 <p><%= @article.body %></p>
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
+  <li>
+    <%= link_to "Destroy", article_path(@article), method: :delete, data: {
+    confirm: "Are you sure?" } %>
+  </li>
 </ul>
 
 <h2>Comments (<%= @article.comments.public_count%>)</h2>
