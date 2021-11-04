@@ -1,9 +1,12 @@
 <% unless comment.archived? %>
 <p>
-    <%= comment.status %>
     <strong>
     <%= comment.commenter %>:
     </strong>
     <%= comment.body %>
+    &nbsp;
+    <%= link_to '❌', [comment.article, comment],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
 </p>
 <% end %>
