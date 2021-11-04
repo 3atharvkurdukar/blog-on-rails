@@ -7,7 +7,7 @@
                   data: { confirm: "Are you sure?" } %></li>
 </ul>
 
-<h2>Comments</h2>
+<h2>Comments (<%= @article.comments.public_count%>)</h2>
 <%= render @article.comments %>
 
 <h2>Add a comment:</h2>
