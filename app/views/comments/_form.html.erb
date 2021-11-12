@@ -6,6 +6,12 @@
     </div>
   </div>
   <div class="mb-2">
+    <%= form.label(:phone, "Mobile No.", class:'block text-sm font-medium text-gray-700') %>
+    <div class="mt-1">
+      <%= form.telephone_field(:phone, class:'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md') %>
+    </div>
+  </div>
+  <div class="mb-2">
     <%= form.label(:body, "Comment", class:'block text-sm font-medium text-gray-700') %>
     <div class="mt-1">
       <%= form.text_area(:body, class:'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md') %>

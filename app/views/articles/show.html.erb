@@ -24,7 +24,13 @@
     </div>
     <div class="pt-6 text-justify">
       <%= simple_format(@article.body, class:'pb-4') %>
-    </>
+    </div>
+  </div>
+  <div class="w-full md:w-50 my-4 leading-normal font-sans">
+    <h2 class="text-2xl font-bold mb-4">Written by</h2>
+    <p class="text-3xl font-semibold text-indigo-600 bg-white shadow-md p-4 mt-3 rounded-md">
+      <%= @article.author %>
+    </p>
   </div>
   <div class="w-full my-4 leading-normal font-sans">
     <h2 class="text-2xl font-bold mb-4">Comments (<%= @article.comments.public_count%>)</h2>

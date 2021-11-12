@@ -2,6 +2,9 @@
 <div class="bg-white mb-3 shadow-md p-2 rounded-md">
     <p class="font-bold text-base text-gray-700 mb-none">
         <%= comment.commenter %>
+        <% if comment.phone %>
+            <span class="ml-2 text-blue-500">(<%= comment.phone %>)</span>
+        <% end %>
     </p>
     <p class="text-xl text-gray-800">
         <%= comment.body %>
